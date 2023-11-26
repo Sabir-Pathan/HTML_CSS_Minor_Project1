@@ -163,8 +163,8 @@ cursor: pointer;
 /* alphabet section */
 #alphabet{
   padding: 0 4vw;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
+  border-bottom: 1px solid rgba(80, 79, 79);
+  border-top: 1px solid rgba(80, 79, 79);
   margin: 1vh 0vw;
   
 }
@@ -172,7 +172,7 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 2vw;
+  padding: 1vh 2vw;
 }
 
 .alphabet_cont h1{
@@ -200,6 +200,85 @@ height: 60px;
   border: 1px solid black;
   cursor: pointer;
 }
+/*End alphabet section */
+
+/* Start Gallery first section */
+#Gallery1{
+width: 100%;
+padding: 0 4vw;
+margin: 1vh 0vw;
+display: flex;
+justify-content: space-between;
+}
+.left{
+  width: 55%;
+  height: 90vh;
+}
+.left img{
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  object-position: top;
+}
+.left h1{
+  padding-top: 2%;
+  margin-bottom: 2%;
+  text-align: right;
+  color: lightslategray;
+}
+.right{
+width: 40%;
+height: 90vh;
+}
+.right img{
+  width: 100%;
+  height: 80%;
+object-fit: cover;
+}
+.text{
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.text_left{
+  width: 45%;
+}
+.text_right{
+  width: 45%;
+}
+/* End Gallery first section */
+
+/* Start Gallery2 first section */
+#Gallery2{
+  width: 100%;
+/* height: 70vh; */
+padding: 0 4vw;
+margin: 1vh 0vw;
+display: flex;
+justify-content: space-between;
+}
+.Gallery2_left{
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.Gallery2_left img{
+  width: 100%;
+  height: 55vh;
+}
+.Gallery2_right{
+  width: 50%;
+  height: 70vh;
+}
+.Gallery2_right img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* End Gallery2 first section */
 /* media quary */
 @media (max-width: 900px) {
   /* start nav bar media quary */
@@ -227,6 +306,29 @@ height: 60px;
     margin-right:95%;
     height: 45px;
     margin-left: 5%;
+  }
+
+  #Gallery1{
+    flex-direction: column;
+  }
+  .left{
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+  }
+  .text{
+    font-size: 0.7rem;
+  }
+  #Gallery2{
+    flex-direction: column;
+
+  }
+  .Gallery2_left{
+    width: 100%;
+  }
+  .Gallery2_right{
+    width: 100%;
   }
   /* End nav bar media quary */
 }
