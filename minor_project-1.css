@@ -357,7 +357,53 @@ justify-content: space-between;
 }
 
 /* End Update Section */
+/* start marque section */
+#marque{
+margin-top: 15vh;
+  width: 100%;
+  padding: 1vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+white-space: nowrap;
+overflow-y: hidden;
+overflow-x: hidden;
+}
+#marque h1{
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px darkgray;
+  color: transparent;
+  font-family: monument;
+  /* background-color: blue; */
+  margin-right: 16px;
+  letter-spacing: 3px;
+animation-name: move;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@keyframes move {
+  from{
+transform: translateX(0);
+}
+to{
+    transform: translateX(calc(-100% - 20px)); 
+    /* cals()function ka use kiya hai space 16px diya tha & 4px default tha total 20px minus kiya hai */
 
+  }
+  
+}
+/* End marque section */
+
+/* start footer section */
+footer{
+  height: 20vh;
+  width: 100%;
+  background-color: red;
+}
+/* End footer section */
 /* media quary */
 @media (max-width: 900px) {
   /* start nav bar media quary */
