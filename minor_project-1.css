@@ -355,8 +355,18 @@ justify-content: space-between;
 .element:last-child{
   border-bottom: 2px solid black;
 }
-
 /* End Update Section */
+
+/* start movie_shot section */
+#movie_shot{
+  width: 100%;
+}
+#movie_shot_left{
+  width: 50%;
+  padding: 10px;
+}
+/* End movie_shot section */
+
 /* start marque section */
 #marque{
 margin-top: 15vh;
