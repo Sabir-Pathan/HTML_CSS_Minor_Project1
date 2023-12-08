@@ -119,8 +119,6 @@ font-family: monument;
 /* start scrolling images */
 #Scrolling_image{
   width: 100%;
-  /* height: 25vh; */
-  /* background-color: red; */
   padding: 1vh 1vh;
   white-space: nowrap;
   overflow-x: hidden;
@@ -128,7 +126,6 @@ font-family: monument;
   
 }
 .scroll_1{
-  /* background-color: blue; */
   width: 100%;
   height: 100%;
   position: relative;
@@ -139,9 +136,7 @@ font-family: monument;
   animation-timing-function: linear;
 }
 .scroll_1 img{
-
 width: 16.2%;
-/* height: 20%; */
 border-radius: 50%;
 object-fit: 30% 30%;
 padding: 1vh;
@@ -361,13 +356,12 @@ justify-content: space-between;
 #movie_shot{
 margin-top: 5vh;
   width: 100%;
-  height: 80%;
   padding: 0 3vw;
   display: flex;
 }
 #movie_shot_left{
   width: 50%;
-  height: 100%;
+  height: 90vh;
 }
 #movie_shot_left img {
   width: 90%;
@@ -375,7 +369,7 @@ margin-top: 5vh;
 }
 #movie_shot_right{
   width: 50%;
-  height: 100%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -441,18 +435,18 @@ to{
 footer{
   padding: 1vh 3vw;
   margin-top: 5vh;
-  height: 20vh;
   width: 100%;
   background-color: rgb(15, 1, 1);
   display: flex;
   justify-content: space-between;
   color: white;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 footer h3{
   font-weight: 900;
   font-size: 1.5rem;
   margin-bottom: 2vh;
+  color: red;
 }
 footer li{
 list-style: none;
@@ -467,10 +461,10 @@ list-style: none;
   /* border: 2px solid red; */
 }
 .social_media i{
-  font-size: 2vw;
+  font-size: 4vh;
 }
 .social_media i:hover{
-  color:rgb(190, 192, 194);
+  color:red;
 }
 .customer_Services {
   width: 20%;
@@ -507,12 +501,16 @@ list-style: none;
   color:rgb(118, 117, 117);
 }
 /* End footer section */
+
 /* media quary */
 @media (max-width: 900px) {
   /* start nav bar media quary */
 
   .menu {
     display: block;
+  }
+  .video_section {
+    height: 60vh;
   }
   .hidden {
     display: none;
@@ -557,6 +555,68 @@ list-style: none;
   }
   .Gallery2_right{
     width: 100%;
+  }
+  #update  {
+font-size: 0.6rem;
+  }
+  .element img{
+    width: 10%;
+    height: 60%;
+    border-radius: 50%;
+  }
+  #movie_shot{
+    flex-direction: column;
+    
+  }
+  #movie_shot_left{
+    width: 100%;
+    height: 100%;
+   
+    
+  }
+  #movie_shot_left img {
+    width: 100%;
+    height: 100%;
+  }
+  #movie_shot_right{
+    width: 100%;
+    height: 100%;
+    
+  }
+  #movie_shot_right h4{
+    padding: 3vh 0px;
+  }
+  #marque h1{
+    font-size: 1.5rem;
+  }
+  #models{
+  flex-wrap: wrap;
+  }
+  #models img{
+    width: 49%;
+    height: 30vh;
+    
+  }
+  footer{
+    flex-wrap: wrap;
+  }
+  footer h3{
+    font-size: 1.2rem;
+  }
+  .social_media{
+    width: 40%;
+  }
+  .customer_Services {
+    
+    width: 55%;
+  }
+  .contact{
+    width: 100%;
+    margin-top: 10vh;
+  }
+  #copy_right h3{
+    font-size: 0.7rem;
+
   }
   /* End nav bar media quary */
 }
