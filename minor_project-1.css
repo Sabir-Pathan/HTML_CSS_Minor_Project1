@@ -359,17 +359,36 @@ justify-content: space-between;
 
 /* start movie_shot section */
 #movie_shot{
+margin-top: 5vh;
   width: 100%;
+  height: 80%;
+  padding: 0 3vw;
+  display: flex;
 }
 #movie_shot_left{
   width: 50%;
-  padding: 10px;
+  height: 100%;
+}
+#movie_shot_left img {
+  width: 90%;
+  height: 100%;
+}
+#movie_shot_right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#movie_shot_right img{
+  height: 80%;
+width: 100%;
 }
 /* End movie_shot section */
 
 /* start marque section */
 #marque{
-margin-top: 15vh;
+margin-top: 5vh;
   width: 100%;
   padding: 1vw;
   border-top: 2px solid black;
@@ -394,6 +413,17 @@ animation-duration: 5s;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
 }
+#models{
+  margin-top: 5vh;
+  padding: 0 3vw;
+  display: flex;
+justify-content: space-between;
+}
+#models img{
+  width: 24%;
+  height: 40vh;
+  border-radius: 10px;
+}
 @keyframes move {
   from{
 transform: translateX(0);
@@ -409,9 +439,72 @@ to{
 
 /* start footer section */
 footer{
+  padding: 1vh 3vw;
+  margin-top: 5vh;
   height: 20vh;
   width: 100%;
-  background-color: red;
+  background-color: rgb(15, 1, 1);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  cursor: pointer;
+}
+footer h3{
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 2vh;
+}
+footer li{
+list-style: none;
+}
+.social_media{
+  width: 20%;
+}
+.social_media_icon{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+.social_media i{
+  font-size: 2vw;
+}
+.social_media i:hover{
+  color:rgb(190, 192, 194);
+}
+.customer_Services {
+  width: 20%;
+}
+.customer_Services ul {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 900;
+}
+.contact{
+  width: 30%;
+}
+.contact ul{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact li{
+  font-weight: 900;
+}
+#copy_right{
+  padding: 0 3vw;
+  width: 100%;
+  height: 5vh;
+  background-color: #ffffff;
+}
+#copy_right{
+  margin-top: 2px;
+  color:rgb(118, 117, 117);
 }
 /* End footer section */
 /* media quary */
